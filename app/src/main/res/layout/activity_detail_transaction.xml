@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UI.Activity.DetailTransactionActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="35dp"
+            android:background="@drawable/layout_bg"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/details_of_transaction_label"
+                android:textSize="@dimen/label_big"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="10dp"
+                android:background="@color/colorBlack"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/senderid_label"
+                android:textSize="@dimen/label_medium"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/detailTransaction_sender"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/textViewHeightDetailTransaction" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/receiverid_label"
+                android:textSize="@dimen/label_medium"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/detailTransaction_receiver"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/textViewHeightDetailTransaction" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/transaction_datetime_label"
+                android:textSize="@dimen/label_medium"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/detailTransaction_date"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/textViewHeightDetailTransaction" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/reason_label"
+                android:textSize="@dimen/label_medium"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/detailTransaction_reason"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/textViewHeightDetailTransaction" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/amount_label"
+                android:textSize="@dimen/label_medium"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/detailTransaction_amount"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/textViewHeightDetailTransaction" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/reference_label"
+                android:textSize="@dimen/label_medium"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/detailTransaction_reference"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/textViewHeightDetailTransaction" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

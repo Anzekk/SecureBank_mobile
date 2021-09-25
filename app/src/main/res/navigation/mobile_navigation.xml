@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_transaction">
+
+    <fragment
+        android:id="@+id/navigation_transaction"
+        android:name="com.secure_bank.bank.UI.Fragments.Transactions.TransactionsFragment"
+        android:label="@string/title_transactions"
+        tools:layout="@layout/fragment_transactions" />
+
+    <fragment
+        android:id="@+id/navigation_addTransaction"
+        android:name="com.secure_bank.bank.UI.Fragments.Transactions.NewTransactionsFragment"
+        android:label="@string/create_new_transaction_label"
+        tools:layout="@layout/fragment_Addtransactions" />
+
+
+    <fragment
+        android:id="@+id/navigation_store"
+        android:name="com.secure_bank.bank.UI.Fragments.Store.StoreFragment"
+        android:label="@string/title_store"
+        tools:layout="@layout/fragment_store" />
+
+    <fragment
+        android:id="@+id/navigation_search"
+        android:name="com.secure_bank.bank.UI.Fragments.Search.SearchFragment"
+        android:label="@string/title_search"
+        tools:layout="@layout/fragment_search" />
+
+    <fragment
+        android:id="@+id/navigation_secret"
+        android:name="com.secure_bank.bank.UI.Fragments.Secret.SecretFragment"
+        android:label="@string/title_secret"
+        tools:layout="@layout/fragment_secret" />
+</navigation>
